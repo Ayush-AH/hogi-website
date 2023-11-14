@@ -1,0 +1,1624 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Neue Montreal;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+*::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #5037E9;
+    border-radius: 50px;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #FCFBFD;
+    z-index: 99;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: loader;
+    animation-duration: .5s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes loader {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+#loader video {
+    height: 150px;
+    border: none;
+    outline: none;
+}
+
+
+#main {
+    width: 100%;
+    background-color: #fcfcfc;
+    overflow: hidden;
+}
+
+#page1 {
+    height: 110vh;
+    width: 100%;
+    background-image: url(https://hogi.io/wp-content/themes/twentytwenty/assets/src/images/section-bg1.svg);
+    padding-top: 120px;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    padding: 30px 77px;
+    z-index: 9;
+}
+
+#nav #navbox {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav #navbox #logo {
+    position: relative;
+    height: 30px;
+    width: 100px;
+}
+
+#navbox #logo img {
+    height: 30px;
+}
+
+#navbox #logo #logo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#logo #logo-overlay img {
+    height: 30px;
+    opacity: 0;
+}
+
+#nav-pt1 {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: #f0f0f0d2;
+    backdrop-filter: blur(3px);
+}
+
+#nav-pt1 a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    font-size: 18px;
+    padding: 15px 15px;
+    border-radius: 10px;
+    transition: all ease 0.4s;
+}
+
+#nav-pt1 a:hover {
+    background-color: white;
+}
+
+#nav-pt2 {
+    display: flex;
+    align-items: center;
+    padding: 16px 25px;
+    border-radius: 20px;
+    background-color: #f0f0f0d2;
+    cursor: pointer;
+    backdrop-filter: blur(3px);
+}
+
+#nav-pt3 {
+    display: none;
+}
+
+#nav-pt2 h4 {
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 16px;
+    color: rebeccapurple;
+    margin-left: 15px;
+}
+
+#page1 #bottom {
+    height: calc(110vh - 120px);
+    width: 100%;
+    padding: 0 77px;
+}
+
+#bottom #video-container {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    border-radius: 65px;
+    overflow: hidden;
+}
+
+#video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#video-container #video-text {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 95%;
+    color: #fff;
+}
+
+#video-text h1 {
+    font-size: 4.1vw;
+    margin-bottom: 120px;
+}
+
+#video-text h4 {
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+#bottom>h3 {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+#bottom>h3 span {
+    font-weight: 500;
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://hogi.io/wp-content/themes/twentytwenty/assets/src/images/section-bg1.svg);
+    padding: 0 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pg2-centre {
+    width: 100%;
+    height: 65%;
+    background-color: #D9DCEA;
+    border-radius: 500px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#pg2-centre #pg2-lf {
+    width: 42%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+}
+
+#pg2-lf h1 {
+    font-size: 65px;
+    line-height: 1;
+    color: #fff;
+}
+
+#pg2-lf h3 {
+    color: #fff;
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+#pg2-lf h2 {
+    color: #5037E9;
+    font-size: 30px;
+    animation-name: anime;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+
+    11%,
+    14% {
+        clip-path: polygon(100% 0, 0 18%, 99% 46%, 0 78%, 100% 100%, 100% 57%, 0 100%, 100% 76%, 0 59%, 100% 35%, 0 37%, 100% 21%);
+    }
+
+    12%,
+    16% {
+        clip-path: polygon(0 51%, 0 29%, 100% 0, 0 14%, 99% 57%, 100% 23%, 0 100%, 100% 72%, 0 0, 100% 100%);
+    }
+
+    13%,
+    17% {
+        clip-path: polygon(0% 0%, 99% 0%, 99% 8%, 0% 7%, 0% 14%, 99% 15%, 100% 22%, 0% 22%, 0% 30%, 99% 30%, 99% 39%, 0% 37%, 0% 43%, 100% 45%, 100% 50%, 0% 49%, 0% 56%, 99% 57%, 99% 63%, 0% 63%, 0% 68%, 99% 68%, 99% 75%, 0% 76%, 0% 81%, 100% 83%, 100% 89%, 0% 88%, 0% 94%, 100% 95%, 100% 100%, 0% 99%);
+    }
+}
+
+#pg2-centre #pg2-rt {
+    width: 58%;
+    height: 100%;
+    background-image: url(https://hogi.io/wp-content/uploads/2023/05/tagline2x-1200x718.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+#page3 {
+    width: 100%;
+    height: 120vh;
+    padding: 0 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3 #about {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pg3-lf {
+    width: 49%;
+    height: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+#pg3-lf video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#pg3-rt {
+    width: 49%;
+    height: 100%;
+    border-radius: 40px;
+    padding: 40px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#pg3-rt h1 {
+    font-weight: 500;
+    color: #5037E9;
+    line-height: 1.1;
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+#pg3-rt h2 {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 1.4;
+    margin: 35px 0;
+}
+
+#page4 {
+    height: 130vh;
+    width: 100%;
+    background-color: #0B0616;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 85px 77px;
+}
+
+#pg4-lf {
+    width: 47%;
+    height: 95%;
+}
+
+#pg4-lf h2 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1;
+    color: #fff;
+}
+
+#pg4-lf p {
+    font-size: 21px;
+    color: #fff;
+    font-weight: 100;
+    line-height: 1.4;
+    margin: 30px 0;
+}
+
+#pg4-lf img {
+    margin-top: 25px;
+    height: 60%;
+}
+
+#pg4-rt {
+    width: 47%;
+    height: 95%;
+    margin-top: -35px;
+}
+
+#pg4-rt .elem {
+    height: calc((100%/8) - 5px);
+    width: 100%;
+    border-bottom: 1px solid rgb(87, 87, 87);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 8px;
+}
+
+#pg4-rt h2 {
+    position: relative;
+    width: 100%;
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+    padding-bottom: 35px;
+}
+
+#pg4-rt h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #5037E9;
+    transition: all linear 0.2s;
+}
+
+#pg4-rt h2:hover::after {
+    width: 100%;
+}
+
+#page5 {
+    height: 100vh;
+    width: 100%;
+    padding: 80px 77px;
+    text-align: center;
+}
+
+#page5>h1 {
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#page5 #pg5-row {
+    width: 100%;
+    height: 55vh;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pg5-row .cards {
+    width: 32.5%;
+    height: 100%;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#pg5-row .cards h4 {
+    font-size: 22px;
+    font-weight: 100;
+}
+
+#pg5-row .cards img {
+    margin: 20px 0;
+}
+
+#pg5-row .cards h3 {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+#pg5-row .cards p {
+    font-size: 20px;
+    font-weight: 100;
+    white-space: wrap;
+    line-height: 1.5;
+    opacity: .9;
+    margin-top: 15px;
+}
+
+#page6 {
+    height: 160vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding: 0 77px 100px;
+}
+
+#page6 .pg6-row {
+    width: 100%;
+    height: 45vh;
+}
+
+#page6 #row1 {
+    display: flex;
+    align-items: center;
+}
+
+#row1 #left {
+    width: 65%;
+    height: 100%;
+    background-image: url(https://hogi.io/wp-content/uploads/2023/05/contact-us2x.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#row1 #left h1 {
+    font-size: 55px;
+    color: #fff;
+}
+
+#row1 #left h4 {
+    font-size: 21px;
+    color: #fff;
+    font-weight: 100;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#row1 #right {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+#row1 #right button {
+    width: 90%;
+    height: 35%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 23px;
+    text-transform: capitalize;
+    background-color: #F4F4F4;
+}
+
+#row1 #right button:hover {
+    background: linear-gradient(to right bottom, #F6F3A1, #FEA595);
+}
+
+#page6 #row2 {
+    text-align: center;
+}
+
+#page6 #row2 h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+#page6 #row2 h4 {
+    font-size: 20px;
+    font-weight: 100;
+    width: 65%;
+    margin: 25px auto;
+}
+
+#page6 #row2 #slides {
+    width: 100%;
+    height: 45%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#page6 #row2 #slides::-webkit-scrollbar {
+    display: none;
+}
+
+#slides .slide {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 4px));
+    }
+}
+
+#slides .slide img {
+    height: 100%;
+    width: calc(100%/5);
+    object-fit: contain;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 30px;
+    padding: 20px;
+}
+
+#page7 {
+    height: 160vh;
+    width: 100%;
+    background: linear-gradient(to right, #5D44EE -7.09%, #C0B4F0 107.31%);
+}
+
+#pg7-row1 {
+    height: 60vh;
+    width: 100%;
+    background-image: url(https://hogi.io/wp-content/themes/twentytwenty/assets/src/images/section-bg2.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 77px;
+}
+
+#pg7-row1 h2 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #FFB7C8;
+    margin-bottom: 65px;
+}
+
+#pg7-row1 h1 {
+    font-size: 49px;
+    color: white;
+}
+
+#pg7-row2 {
+    width: 100%;
+    padding: 30px 77px;
+}
+
+#pg7-row2>img {
+    height: 55px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#pg7-row2 #swiper {
+    width: 100%;
+    height: 80vh;
+    padding: 15px 0;
+    white-space: nowrap;
+    overflow-y: hidden;
+    display: flex;
+    overflow-x: auto;
+}
+
+#pg7-row2 #swiper::-webkit-scrollbar {
+    display: none;
+}
+
+#pg7-row2 #swiper .elems {
+    height: 100%;
+    width: 32%;
+    background-color: #fcfcfc;
+    border-radius: 30px;
+    /* display: inline-block; */
+    margin-right: 10px;
+    padding: 40px;
+    flex-shrink: 0;
+}
+
+#pg7-row2 #swiper .elems:nth-child(1) {
+    height: 100%;
+    width: 55%;
+    background-color: #fcfcfc27;
+    border-radius: 30px;
+    /* display: inline-block; */
+    margin-right: 10px;
+    padding: 40px;
+    color: white;
+}
+
+#swiper .elems:nth-child(1) h2 {
+    font-size: 45px;
+    white-space: wrap;
+    margin-bottom: 25px;
+}
+
+#swiper .elems:nth-child(1) p {
+    white-space: wrap;
+    font-size: 28px;
+    font-weight: 100;
+    margin: 20px 0;
+    line-height: 1.3;
+}
+
+#swiper .elems:nth-child(1) h3 {
+    font-size: 28px;
+}
+
+#swiper .elems:nth-child(1) #price {
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+#swiper .elems:nth-child(1) h4 {
+    font-size: 25px;
+    font-weight: 400;
+    opacity: .6;
+}
+
+#swiper .elems:nth-child(1) button {
+    padding: 18px 35px;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: white;
+    background-color: #4d24a5;
+    border: none;
+    border-radius: 15px;
+    animation: btn 1s linear infinite alternate;
+    transition: all ease 0.5s;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#swiper .elems:nth-child(1) button:hover {
+    scale: 1.05;
+}
+
+#swiper .elems h3 {
+    font-size: 25px;
+    font-weight: 200;
+}
+
+#swiper .elems p {
+    font-size: 22px;
+    white-space: wrap;
+    font-weight: 100;
+    margin-top: 100px;
+    line-height: 1.5;
+}
+
+#page8 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #0B0616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page8 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page8 #pg8-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60vh;
+    width: 100%;
+    padding: 0 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page8 #pg8-text #left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#pg8-text #left h1 {
+    font-size: 55px;
+    color: white;
+    font-weight: 500;
+}
+
+#pg8-text #left p {
+    width: 88%;
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+    margin: 30px 0;
+    line-height: 1.5;
+}
+
+#pg8-text #left button {
+    padding: 18px 35px;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: white;
+    background-color: #4d24a5;
+    border: none;
+    border-radius: 15px;
+    animation: btn 1s linear infinite alternate;
+    transition: all ease 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+#pg8-text #left button:hover {
+    scale: 1.05;
+}
+
+@keyframes btn {
+    from {
+        background-color: #4d24a5;
+    }
+
+    to {
+        background-color: #2B1165;
+    }
+}
+
+#page8 #pg8-text #right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+#pg8-text #right .tabs {
+    width: 100%;
+    height: calc((100%/4) - 20px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+#pg8-text #right .tabs .sides {
+    width: 30%;
+}
+
+.sides p {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+#page9 {
+    height: 180vh;
+    width: 100%;
+    background-color: #0B0616;
+    text-align: center;
+    color: white;
+}
+
+#page9>h1 {
+    color: transparent;
+    font-size: 208px;
+    font-weight: 900;
+    -webkit-text-stroke: 3px #52416F;
+    line-height: 1;
+}
+
+#page9 #pg9-row {
+    height: 62vh;
+    width: 100%;
+    padding: 0 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+}
+
+#page9 #pg9-row #left {
+    width: 48%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #7b66f7;
+    padding: 40px;
+    text-align: left;
+}
+
+#page9 #pg9-row #right {
+    width: 48%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #7b66f7;
+    padding: 40px;
+    text-align: left;
+}
+
+#page9 #pg9-row h3 {
+    font-size: 32px;
+}
+
+#page9 #pg9-row p {
+    font-size: 23px;
+    font-weight: 100;
+    line-height: 1.5;
+    margin-top: 40px;
+}
+
+#page9 button {
+    padding: 16px 35px;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: white;
+    background-color: #4d24a5;
+    border: none;
+    border-radius: 15px;
+    animation: btn 1s linear infinite alternate;
+    transition: all ease 0.5s;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#page9 #join {
+    margin: 40px auto;
+}
+
+#page9 button:hover {
+    scale: 1.05;
+}
+
+#page9>h2 {
+    font-size: 53px;
+    font-weight: 500;
+    margin-top: 170px;
+}
+
+#page9>h3 {
+    font-size: 21px;
+    font-weight: 100;
+    margin: 20px 0;
+}
+
+#page9>p {
+    width: 50%;
+    font-size: 23px;
+    font-weight: 100;
+    line-height: 1.3;
+    margin: 0 auto;
+}
+
+#page10 {
+    height: 130vh;
+    width: 100%;
+    background-color: #0B0616;
+    padding: 10px 77px;
+}
+
+#page10 #pg10-row1 {
+    height: 48%;
+    width: 100%;
+    background: conic-gradient(from 200.2deg at 50% 50%, #3F1E85 0deg, #672CE6 360deg);
+    margin: 20px 0;
+    border-radius: 250px;
+}
+
+#page10 #pg10-row1 #overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 60px 0;
+}
+
+#pg10-row1 #overlay #left {
+    height: 100%;
+    width: 50%;
+}
+
+#pg10-row1 #overlay #left h3 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+#pg10-row1 #overlay #left h2 {
+    font-size: 45px;
+    font-weight: 200;
+    line-height: 1;
+    margin-bottom: 100px;
+}
+
+#pg10-row1 #overlay #left h4 {
+    font-size: 16px;
+    font-weight: 200;
+    display: inline-block;
+    padding: 10px 18px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#pg10-row1 #overlay #right {
+    height: 100%;
+    width: 50%;
+    text-align: right;
+    padding-right: 150px;
+}
+
+#pg10-row1 #overlay #right h3 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+#pg10-row1 #overlay #right h2 {
+    font-size: 45px;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
+#page10 #pg10-row2 {
+    height: 45%;
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-top: 70px;
+}
+
+#page10 #pg10-row2 .foot {
+    width: 22%;
+    height: 100%;
+}
+
+#page10 #pg10-row2 .foot:nth-child(1) {
+    width: 45%;
+    height: 100%;
+}
+
+#pg10-row2 .foot:nth-child(1) img {
+    height: 30px;
+}
+
+#pg10-row2 .foot:nth-child(1) h3 {
+    font-size: 20px;
+    font-weight: 500;
+    width: 90%;
+    line-height: 1.5;
+    margin: 30px 0;
+}
+
+#pg10-row2 .foot:nth-child(1) p {
+    word-spacing: 2px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#pg10-row2 .foot:nth-child(1) h4 {
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+#pg10-row2 .foot:nth-child(2) h3,
+#pg10-row2 .foot:nth-child(3) h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#pg10-row2 .foot:nth-child(2) p,
+#pg10-row2 .foot:nth-child(3) p {
+    font-size: 18px;
+    font-weight: 100;
+    margin: 12px 0;
+}
+
+@media (max-width:600px) {
+
+    #nav {
+        padding: 25px 20px;
+    }
+
+    #navbox {
+        background-color: #f0f0f0d2;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    #navbox #logo-overlay{
+        display: block;
+        opacity: 0;
+    }
+    #nav #logo img {
+        height: 30px;
+    }
+
+    #nav-pt1 {
+        display: none;
+    }
+
+    #nav-pt2 {
+        display: none;
+    }
+
+    #nav-pt3 {
+        display: block;
+    }
+
+    #nav-pt3 .menu {
+        height: 40px;
+        margin-left: 6px;
+    }
+
+    #page1 #bottom {
+        padding: 0 20px;
+    }
+
+    #video-text h1 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    #video-text h4 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    #bottom>h3 {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    #page2 {
+        padding: 0 20px;
+    }
+
+    #pg2-centre {
+        width: 100%;
+        height: 95%;
+        flex-direction: column;
+    }
+
+    #pg2-centre #pg2-lf {
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    #pg2-lf h1 {
+        font-size: 30px;
+        margin-top: 60px;
+    }
+
+    #pg2-lf h3 {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    #pg2-lf h2 {
+        font-size: 22px;
+    }
+
+    #pg2-centre #pg2-rt {
+        width: 100%;
+        height: 50%;
+        background-image: url(https://hogi.io/wp-content/uploads/2023/05/tagline1.5x.webp);
+        background-position: center;
+        background-size: cover;
+    }
+
+    #page3 {
+        padding: 0 20px;
+    }
+
+    #page3 #about {
+        height: 110vh;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #pg3-lf {
+        width: 100%;
+        height: 45%;
+    }
+
+    #pg3-rt {
+        width: 100%;
+        height: 55%;
+        padding: 15px 0;
+    }
+
+    #pg3-rt h1 {
+        line-height: 1;
+        font-size: 20px;
+        margin: 12px 0;
+    }
+
+    #pg3-rt h2 {
+        font-size: 17px;
+        margin: 8px 0;
+    }
+
+    #page4 {
+        height: 190vh;
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    #pg4-lf {
+        width: 100%;
+        height: 50%;
+    }
+
+    #pg4-lf h2 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    #pg4-lf p {
+        font-size: 15px;
+        font-weight: 200;
+        line-height: 1.6;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    #pg4-lf img {
+        margin-top: 10px;
+        height: 50%;
+    }
+
+    #pg4-rt {
+        width: 100%;
+        height: 50%;
+        margin-top: 10px;
+    }
+
+    #pg4-rt .elem {
+        padding: 0 8px;
+    }
+
+    #pg4-rt h2 {
+        font-size: 20px;
+        padding-bottom: 28px;
+    }
+
+    #page5 {
+        height: 80vh;
+        padding: 30px 20px;
+    }
+
+    #page5>h1 {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    #page5 #pg5-row {
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+
+    #page5 #pg5-row::-webkit-scrollbar {
+        display: none;
+    }
+
+    #pg5-row .cards {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        margin-right: 10px;
+        flex-shrink: 0;
+    }
+
+    #pg5-row .cards p {
+        white-space: wrap;
+        font-size: 15px;
+    }
+
+    
+#page6 {
+    height: 190vh;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+#page6 .pg6-row {
+    width: 100%;
+}
+#page6 #row1 {
+    flex-direction: column;
+    height: 68%;
+}
+
+#row1 #left {
+    width: 100%;
+    height: 65%;
+    background-image: url(https://hogi.io/wp-content/uploads/2023/05/contact-us1.5x.webp);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#row1 #left h1 {
+    width: 50%;
+    line-height: 1;
+    font-size: 35px;
+}
+
+#row1 #left h4 {
+    margin-top: 15px;
+}
+
+#row1 #right {
+    width: 100%;
+    height: 35%;
+    gap: 20px;
+}
+#row1 #right button{
+    width: 100%;
+}
+#page6 #row2 {
+    height: 25%;
+}
+#page6 #row2 {
+    text-align: center;
+}
+
+#page6 #row2 h1 {
+    font-size: 40px;
+}
+
+#page6 #row2 h4 {
+    font-size: 20px;
+    width: 100%;
+}
+
+#page6 #row2 #slides {
+    height: 28%;
+}
+
+#slides .slide img {
+    width: 30%;    
+    margin: 0 5px;
+    padding:0;
+}
+
+#page7 {
+    height: 140vh;
+}
+
+#pg7-row1 {
+    height: 50vh;
+    padding: 0 20px;
+}
+
+#pg7-row1 h2 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+#pg7-row1 h1 {
+    font-size: 28px;
+}
+
+#pg7-row2 {
+    width: 100%;
+    padding: 0 20px;
+}
+
+#pg7-row2 #swiper {
+    height: 70vh;
+}
+
+
+#pg7-row2 #swiper .elems {
+    width: 100%;
+    padding: 20px;
+    flex-shrink: 0;
+}
+#pg7-row2 #swiper .elems  p{
+    white-space: wrap;
+    font-size: 19px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+#pg7-row2 #swiper .elems:nth-child(1) {
+    width: 100%;
+    margin-right: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#swiper .elems:nth-child(1) h2 {
+    white-space: wrap;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+#swiper .elems:nth-child(1) p {
+    font-size: 18px;
+    white-space: wrap;
+    line-height: 1.6;
+}
+
+#swiper .elems:nth-child(1) h3 {
+    font-size: 19px;
+}
+#swiper .elems:nth-child(1) h4{
+    font-size: 19px;
+}
+
+#swiper .elems:nth-child(1) button {
+    margin-top: 20px;
+}
+
+
+#page8 {
+    height: 120vh;
+}
+
+#page8 #pg8-text {
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#page8 #pg8-text #left {
+    height: 40%;
+    width: 100%;
+}
+
+#pg8-text #left h1 {
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+#pg8-text #left p {
+    margin: 15px 0;
+    line-height: 1.3;
+}
+
+#pg8-text #left button {
+    padding: 15px 30px;
+}
+
+
+#page8 #pg8-text #right {
+    height: 45%;
+    width: 100%;
+}
+
+#pg8-text #right .tabs {
+    justify-content: space-between;
+    padding: 0;
+}
+#pg8-text #right .tabs h3{
+    font-size: 16px;
+}
+#pg8-text #right .tabs .sides {
+    width: 40%;
+}
+
+.sides p {
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 1.2;
+}
+
+#page9 {
+    height: 170vh;
+}
+
+#page9>h1 {
+    font-size: 48px;
+    -webkit-text-stroke: 1px #52416F;
+    padding-top: 40px;
+}
+
+#page9 #pg9-row {
+    height: 62vh;
+    padding: 0 20px;
+    margin-top: 40px;
+}
+
+#page9 #pg9-row #left {
+    width: 100%;
+    padding:40px 20px;
+}
+
+#page9 #pg9-row #right {
+    display: none;
+    width: 100%;
+    padding:40px 20px;
+    text-align: left;
+}
+
+#page9 #pg9-row h3 {
+    font-size: 22px;
+}
+
+#page9 #pg9-row p {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+#page9>h2 {
+    font-size: 35px;
+    margin-top: 70px;
+}
+
+#page9>h3 {
+    font-size: 19px;
+}
+
+#page9>p {
+    width: 90%;
+    font-size: 16px;
+}
+
+#page10 {
+    height: 210vh;
+    padding: 0 20px;
+}
+
+#page10 #pg10-row1 {
+    height: 100vh;
+    background: conic-gradient(from 250.2deg at 50% 50%, #3F1E85 0deg, #672CE6 360deg);
+    margin: 0;
+}
+
+#page10 #pg10-row1 #overlay {
+    flex-direction: column;
+    width: 100%;
+}
+
+#pg10-row1 #overlay #left {
+    height: 50%;
+    width: 100%;
+    padding: 0 30px;
+}
+
+#pg10-row1 #overlay #left h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#pg10-row1 #overlay #left h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#pg10-row1 #overlay #left h4 {
+    font-size: 13px;
+    padding: 8px 15px;
+    margin-bottom: 8px;
+}
+
+#pg10-row1 #overlay #right {
+    height: 50%;
+    width: 100%;
+    padding: 30px;
+}
+
+#pg10-row1 #overlay #right h3 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#pg10-row1 #overlay #right h2 {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+#page10 #pg10-row2 {
+    min-height: 110vh;
+    margin: 0;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding-top: 0;
+}
+
+#page10 #pg10-row2 .foot {
+    width: 100%;
+    height: 36vh;
+}
+
+#page10 #pg10-row2 .foot:nth-child(1) {
+    width: 100%;
+    height: 34vh;
+}
+#pg10-row2 .foot:nth-child(1) h3{
+    margin: 15px 0;
+    font-size: 17px;
+}
+#pg10-row2 .foot:nth-child(1) p{
+    font-size: 16px;
+    margin: 0;
+}
+
+#pg10-row2 .foot:nth-child(1) h4 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+#pg10-row2 .foot:nth-child(2) h3{
+    font-size: 15px;
+    margin-top: 0;
+}
+#pg10-row2 .foot:nth-child(3) h3 {
+    margin-top: 20px;
+    font-size: 15px;
+}
+#pg10-row2 .foot:nth-child(2) p,
+#pg10-row2 .foot:nth-child(3) p {
+    font-size: 15px;
+    line-height: 1;
+}
+}
